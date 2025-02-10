@@ -1,13 +1,14 @@
-import Button from "../components/Button/Button";
 import Navbar from "../components/Navbar.tsx/Navbar";
 import About from "./About";
-import Services from "./Services";
+import Engagement from "./Engagement";
+import Strategy from "./Strategy";
+import Values from "./Values";
 
 const Home = () => {
   return (
     <>
     <div className="relative h-screen w-full bg-[url('/assets/niceweddingimg.jpg')] bg-cover bg-center">
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute inset-0 bg-[#4A1316] opacity-40"></div>
       <div className="relative">
         <Navbar />
       </div>
@@ -35,6 +36,9 @@ const Home = () => {
      
     </div>
     <About />
+    <Values />
+    <Engagement />
+    <Strategy />
     </>
   );
 };

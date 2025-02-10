@@ -1,15 +1,15 @@
 // import eventPlanImage from '../assets/generated-image-preview.png';
-import celebrateImage from "../assets/aboutimg.png";
+import celebrateImage from "../assets/equipe.png";
 import Button from "../components/Button/Button";
 
 const About = () => {
   return (
-    <section className="mt-15">
-      <h1 className="text-center text-5xl font-serif font-bold">A propos</h1>
+    <section className="bg-[#4A1316] text-white">
+      <h1 className="text-center text-5xl font-serif font-bold pt-8">A propos</h1>
 
       <div className="flex items-center gap-4 text-center justify-center mt-4">
         <span className="block w-16 h-[1px] bg-gray-400"></span>
-        <h1 className="text-2xl font-serif font-bold tracking-wide text-[#4A1316]">
+        <h1 className="text-2xl font-serif font-bold tracking-wide text-white">
           NOTRE ORGANISATION
         </h1>
         <span className="block w-16 h-[1px] bg-gray-400"></span>
@@ -17,10 +17,10 @@ const About = () => {
 
       <div className="flex items-center justify-center gap-8 p-8">
         <img src={celebrateImage} alt="planning pic"
-          className="w-2/3 max-w-2xl"
+          className="w-1/3 max-w-2xl"
         />
         <div className="flex flex-col gap-6 w-1/2 text-justify">
-          <p className="font-bold text-3xl">
+          <p className="font-bold text-3xl text-[#4A1316]">
             Nous sommes une équipe des passionnés et experimentés en
             événementiels
           </p>
@@ -41,7 +41,7 @@ const About = () => {
             ordre à ses clients.
           </p>
           <Button
-            className="px-4 w-1/4 py-3 text-gray-800 border-2 border-[#4A1316] rounded-3xl hover:bg-[#4A1316] hover:text-white transition duration-300"
+            className="px-4 w-1/4 py-3 text-white border-2 border-white rounded-3xl hover:bg-white hover:text-[#4A1316] transition duration-300"
             text="Reservez dès maintenant "
           />
         </div>

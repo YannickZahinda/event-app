@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Communication from './pages/Communication';
 import Planning from './pages/Planning';
+import Services from './pages/Strategy';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/manage-events" element={<Communication />} />
-        <Route path="/services" element={<h1>Services Page</h1>} />
+        <Route path="/services" element={<Services />} />
         <Route path="/planning" element={<Planning />} />
       </Routes>
     </Router>
