@@ -1,4 +1,4 @@
-import { africanWedding, celebration, enterprise, conference } from "../assets";
+import { africanWedding, celebration, enterprise, conference, bride, gift, surprise } from "../assets";
 
 const servicesData = [
   {
@@ -6,15 +6,15 @@ const servicesData = [
     picture: africanWedding,
     desc: [
       {
-        title: "Planification complète: ",
+        title: "Planification complète ",
         desc: "De la conception à l'exécution, nous nous occupons de tous les aspects de votre mariage pour créer un jour parfait.",
       },
       {
-        title: "Coordination du Jour J: ",
+        title: "Coordination du Jour J ",
         desc: "Gestion de tous les détails le jour de votre mariage pour que vous puissiez profiter pleinement."
       },
       {
-        title: "Conception et Décoration : ",
+        title: "Conception et Décoration",
         desc: "Création de décors époustouflants qui reflètent votre style et vos goûts."
       },
     
@@ -25,15 +25,15 @@ const servicesData = [
     picture: conference,
     desc: [
         {
-            title: "Organisation et Logistique : ",
+            title: "Organisation et Logistique ",
             desc: "Gestion complète de la logistique, de la réservation des lieux à la coordination des intervenants."
         },
         {
-            title: "Services Audiovisuels : ",
+            title: "Services Audiovisuels ",
             desc: "Fourniture de solutions audiovisuelles pour des présentations professionnelles et captivantes."
         },
         {
-            title: "Gestion des Participants : ",
+            title: "Gestion des Participants ",
             desc: "Coordination des inscriptions, des badges et des besoins des participants."
         },
     ]
@@ -43,34 +43,62 @@ const servicesData = [
     picture: celebration,
     desc: [
         {
-            title: "Anniversaires : ",
+            title: "Anniversaires ",
             desc: "Organisation de fêtes d'anniversaire personnalisées et mémorables pour toutes les tranches d'âge."
         },
         {
-            title: "Célébrations Privées : ",
+            title: "Célébrations Privées ",
             desc: "Planification de fêtes privées telles que des anniversaires de mariage, des fêtes de fiançailles, etc."
         },
         {
-            title: "Événements Thématiques : ",
+            title: "Événements Thématiques ",
             desc: "Création d'événements sur des thèmes spécifiques pour des expériences uniques et amusantes."
         }
     ]
   }, 
   {
-    title: "Événements d'Entreprise : ",
+    title: "Événements d'Entreprise ",
     picture: enterprise,
     desc: [
         {
-            title: "Lancements de Produits : ",
+            title: "Lancements de Produits ",
             desc: "Organisation d'événements de lancement de produits pour maximiser l'impact et l'engagement."
         },
         {
-            title: "Réunions et Conférences : ",
+            title: "Réunions et Conférences ",
             desc: "Planification et exécution de réunions et conférences d'entreprise efficaces et professionnelles."
         }, 
         {
-            title: "Team Building : ",
+            title: "Team Building",
             desc: "Conception et organisation d'activités de team building pour renforcer la cohésion et la motivation des équipes."
+        }
+    ]
+  },
+  {
+    title: "Location des matériels de cérémonies",
+    picture: bride,
+    desc: [
+        {
+            title: "Photogram, parapluie, téléphone, etc.."
+        }
+    ]
+  },
+  {
+    title: "Gift package", 
+    picture: gift,
+    desc: [
+        {
+            title: "Nous differents sortes de packets, panier a cadeau"
+        }
+    ]
+  }, 
+  
+  {
+    title: "Surprises",
+    picture: surprise,
+    desc: [
+        {
+            title: "Nous vous aidons à surprendre vos biens-aîmés pour leurs redonner le sourire"
         }
     ]
   }

@@ -36,7 +36,7 @@ const Navbar = () => {
         </ul>
         <div className="flex space-x-3">
           <Button
-            className="px-4 py-3 text-white border-2 border-white rounded-3xl hover:bg-[#4A1316] hover:text-white transition duration-300"
+            className="px-4 py-3 text-white border-2 border-white rounded-3xl hover:bg-[#4A1316] hover:border-[#4A1316] hover:cursor-pointer hover:text-white transition duration-300"
             text="RESERVER "
           />
         </div>

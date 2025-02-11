@@ -4,14 +4,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import servicesData from "../../data/servicesData";
+import Button from "../Button/Button";
 
 const ServicesList = () => {
   return (
     <section className="bg-[#4A1316] text-white py-12">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-8">
-          Nos Services
-        </h2>
+        <div className="flex items-center gap-4 text-center justify-center mt-4 mb-10">
+          <span className="block w-16 h-[1px] bg-gray-400"></span>
+          <h1 className="text-2xl font-serif font-bold tracking-wide text-white">
+            NOS SERVICES
+          </h1>
+          <span className="block w-16 h-[1px] bg-gray-400"></span>
+        </div>
 
         {/* Swiper Slider */}
         <Swiper
@@ -25,24 +30,33 @@ const ServicesList = () => {
           }}
           navigation
           pagination={{ clickable: true }}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 6000, disableOnInteraction: false }}
           loop
           className="pb-10"
         >
           {servicesData.map((service, index) => (
             <SwiperSlide key={index} className="p-4">
-              <div className="bg-[#621A1D] p-6 rounded-lg shadow-md text-center">
+              <div className="bg-[#621A1D] p-6 rounded-lg shadow-md text-center flex flex-col min-h-[450px]">
                 <img
                   src={service.picture}
                   alt={service.title}
                   className="w-full h-48 object-cover rounded-lg"
                 />
+
                 <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
-                <ul className="mt-2 text-gray-300 text-sm">
+
+                <ul className="mt-2 text-gray-300 text-sm flex-grow">
                   {service.desc.map((description, i) => (
-                    <li key={i} className="mt-1">{description.title}</li>
+                    <li key={i} className="mt-1">
+                      {description.title}
+                    </li>
                   ))}
                 </ul>
+
+                <Button
+                  text="Reserver"
+                  className="rounded-2xl p-2 mt-auto border-white border hover:bg-gray-300 hover:text-gray-700 hover:cursor-pointer"
+                />
               </div>
             </SwiperSlide>
           ))}
