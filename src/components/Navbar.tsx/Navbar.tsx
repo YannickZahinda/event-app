@@ -30,7 +30,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/planning" className="hover:underline ">
-              Communications/planning
+              Contactez-nous
             </Link>
           </li>
         </ul>

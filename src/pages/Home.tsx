@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar.tsx/Navbar";
+import Sliding from "../components/slides/Sliding";
 import About from "./About";
 import Engagement from "./Engagement";
 import Strategy from "./Strategy";
@@ -35,6 +36,7 @@ const Home = () => {
       {/* <Services /> */}
      
     </div>
+    <Sliding />
     <About />
     <Values />
     <Engagement />
