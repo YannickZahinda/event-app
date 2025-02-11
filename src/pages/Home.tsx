@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar.tsx/Navbar";
+import ServicesList from "../components/slides/ServicesList";
 import Sliding from "../components/slides/Sliding";
 import About from "./About";
 import Engagement from "./Engagement";
@@ -40,6 +41,7 @@ const Home = () => {
     <About />
     <Values />
     <Engagement />
+    <ServicesList />
     <Strategy />
     </>
   );
