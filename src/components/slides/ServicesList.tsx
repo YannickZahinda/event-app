@@ -8,11 +8,11 @@ import Button from "../Button/Button";
 
 const ServicesList = () => {
   return (
-    <section className="bg-[#4A1316] text-white py-12">
+    <section className="bg-white text-black py-12">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center gap-4 text-center justify-center mt-4 mb-10">
           <span className="block w-16 h-[1px] bg-gray-400"></span>
-          <h1 className="text-2xl font-serif font-bold tracking-wide text-white">
+          <h1 className="text-2xl font-serif font-bold tracking-wide text-black">
             NOS SERVICES
           </h1>
           <span className="block w-16 h-[1px] bg-gray-400"></span>
@@ -36,7 +36,7 @@ const ServicesList = () => {
         >
           {servicesData.map((service, index) => (
             <SwiperSlide key={index} className="p-4">
-              <div className="bg-[#621A1D] p-6 rounded-lg shadow-md text-center flex flex-col min-h-[450px]">
+              <div className="bg-gray-300 p-6 rounded-lg shadow-md text-center flex flex-col min-h-[450px]">
                 <img
                   src={service.picture}
                   alt={service.title}
@@ -45,7 +45,7 @@ const ServicesList = () => {
 
                 <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
 
-                <ul className="mt-2 text-gray-300 text-sm flex-grow">
+                <ul className="mt-2 text-gray-900 text-sm flex-grow">
                   {service.desc.map((description, i) => (
                     <li key={i} className="mt-1">
                       {description.title}
@@ -55,7 +55,7 @@ const ServicesList = () => {
 
                 <Button
                   text="Reserver"
-                  className="rounded-2xl p-2 mt-auto border-white border hover:bg-gray-300 hover:text-gray-700 hover:cursor-pointer"
+                  className="rounded-2xl p-2 mt-auto bg-white text-black border-1 border-white hover:border-white hover:bg-gray-300 hover:text-gray-700 hover:cursor-pointer"
                 />
               </div>
             </SwiperSlide>
