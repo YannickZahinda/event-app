@@ -6,6 +6,7 @@ import Engagement from "./Engagement";
 import Shop from "./Shop";
 import Strategy from "./Strategy";
 import Values from "./Values";
+import TypewriterComponent from "typewriter-effect";
 
 const Home = () => {
   return (
@@ -30,7 +31,13 @@ const Home = () => {
 
             <p className="text-2xl sm:text-3xl md:text-4xl text-white mt-4 font-serif font-bold text-center">
               PARCE QUE CHAQUE FÊTE MÉRITE <br className="hidden sm:block" />
-              D'ÊTRE EXCEPTIONNELLE !
+              <TypewriterComponent options={{
+                strings: ["D'ÊTRE EXCEPTIONNELLE !"],
+                autoStart: true,
+                deleteSpeed: 50,
+                delay: 100,
+                loop: true,
+              }} />
             </p>
           </div>
         </section>
