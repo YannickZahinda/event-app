@@ -5,6 +5,7 @@ import enterprise from './entreprise event.jpg';
 import bride from './bride.png';
 import gift from './giftpackage.webp';
 import surprise from './seneve.png';
+import bouquet from './bouquet-removebg-preview.png'
 
 export {
     africanWedding,
@@ -13,5 +14,6 @@ export {
     enterprise,
     bride,
     gift,
-    surprise
+    surprise,
+    bouquet,
 }

@@ -12,3 +12,7 @@ export interface ProductProps {
     originalPrice: number;
     discount: number;
 }
+
+export interface PopupProps {
+    onClose: () => void;
+}

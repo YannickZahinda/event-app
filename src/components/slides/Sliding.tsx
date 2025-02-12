@@ -4,7 +4,7 @@ import { FaSmile } from "react-icons/fa";
 const Sliding = () => {
   return (
     <div className="overflow-hidden whitespace-nowrap bg-gray text-gray-700 py-3">
-      <motion.div className="flex items-center gap-2 text-3xl font-bold"
+      <motion.div className="flex items-center gap-2 text-3xl font-semibold"
       initial={{ x: "100%"}}
       animate={{ x: "-100%"}}
       transition={{ repeat: Infinity, duration: 25, ease: "linear"}}
