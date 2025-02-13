@@ -5,6 +5,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import servicesData from "../../data/servicesData";
 import Button from "../Button/Button";
+import ReactWhatsapp from "react-whatsapp";
+
 
 const ServicesList = () => {
   return (
@@ -53,10 +55,14 @@ const ServicesList = () => {
                   ))}
                 </ul>
 
-                <Button
-                  text="Reserver"
+                <ReactWhatsapp 
+                  number="+243978042243"
+                  message={`Bonjour je suis interessé(e) d'avoir plus d'infos sur ${service.title}`}
+                  element="button"
                   className="rounded-2xl p-2 mt-auto bg-white text-black border-1 border-white hover:border-white hover:bg-gray-300 hover:text-gray-700 hover:cursor-pointer"
-                />
+                >
+                  Reserver
+                </ReactWhatsapp>
               </div>
             </SwiperSlide>
           ))}

@@ -24,7 +24,7 @@ const About = () => {
         <img
           src={celebrateImage}
           alt="planning pic"
-          className="w-full md:w-1/3 max-w-lg mx-auto"
+          className="w-full md:w-1/2 max-w-lg mx-auto"
         />
         <div className="flex flex-col gap-6 w-full md:w-1/2 text-justify">
           <p className="font-bold text-2xl md:text-3xl text-[#FFB6C1]">
