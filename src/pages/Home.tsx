@@ -3,6 +3,7 @@ import ServicesList from "../components/slides/ServicesList";
 import Sliding from "../components/slides/Sliding";
 import About from "./About";
 import Engagement from "./Engagement";
+import Footer from "./Footer";
 import Shop from "./Shop";
 import Strategy from "./Strategy";
 import Values from "./Values";
@@ -51,6 +52,7 @@ const Home = () => {
       <div id="services"><ServicesList /></div>
       <Shop />
       <Strategy />
+      <Footer />
     </>
   );
 };

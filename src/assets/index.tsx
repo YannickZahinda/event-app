@@ -6,6 +6,7 @@ import bride from './bride.png';
 import gift from './giftpackage.webp';
 import surprise from './seneve.png';
 import bouquet from './bouquet-removebg-preview.png'
+import logo from './logo-removebg-preview.png'
 
 export {
     africanWedding,
@@ -16,4 +17,5 @@ export {
     gift,
     surprise,
     bouquet,
+    logo,
 }

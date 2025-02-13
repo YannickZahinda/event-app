@@ -1,7 +1,11 @@
+import { useState } from "react";
 import celebrateImage from "../assets/equipe.png";
 import Button from "../components/Button/Button";
+import Popup from "../components/popup/Popup";
 
 const About = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className="bg-[#4A1316] text-white py-12 px-4">
       <h1 className="text-center text-4xl md:text-5xl font-serif font-bold pt-8">
@@ -49,12 +53,17 @@ const About = () => {
           </p>
           <div className="flex justify-center md:justify-start">
             <Button
-              className="px-6 py-3 text-white border-2 border-white rounded-3xl hover:bg-white hover:text-[#4A1316] transition duration-300"
+              className="px-6 py-3 text-white hover:cursor-pointer border-2 border-white rounded-3xl hover:bg-white hover:text-[#4A1316] transition duration-300"
               text="Réservez dès maintenant"
+              onClick={(e) => {
+                e.preventDefault();
+                setIsOpen(true);
+              }}
             />
           </div>
         </div>
       </div>
+      {isOpen && <Popup onClose={() => setIsOpen(false)} />}
     </section>
   );
 };
