@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import servicesData from "../../data/servicesData";
-import Button from "../Button/Button";
 import ReactWhatsapp from "react-whatsapp";
 
 
